@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SVS - Vote Now</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background: #f5f5f5; }
+        .container { margin-top: 50px; }
+        .candidate-box { background: #fff; padding: 15px; border-radius: 10px; text-align: center; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); }
+        .candidate-img { width: 120px; height: 120px; border-radius: 10px; margin-bottom: 10px; }
+        .btn-vote { margin-top: 15px; width: 100%; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-dark bg-dark">
+            <a href="index.php" class="navbar-brand">SIS Voting System In College Department</a>
+        </nav>
+
+        <div class="text-center mt-4">
+            <h2>Vote Now</h2>
+        </div>
+
+        <form action="saveVote.php" method="POST">
+            <div class="row mt-4">
+                <!-- Governor -->
+                <div class="col-md-6">
+                    <div class="candidate-box">
+                        <img src="images/governor.jpg" alt="Governor" class="candidate-img">
+                        <h5>Governor</h5>
+                        <select name="gov" class="form-control" required>
+                            <option value="John Doe">John Doe</option>
+                            <option value="Mark Smith">Mark Smith</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Vice Governor -->
+                <div class="col-md-6">
+                    <div class="candidate-box">
+                        <img src="images/vice_governor.jpg" alt="Vice Governor" class="candidate-img">
+                        <h5>Vice Governor</h5>
+                        <select name="vice_gov" class="form-control" required>
+                            <option value="Jane Doe">Jane Doe</option>
+                            <option value="Alex Brown">Alex Brown</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <!-- Representative 1 -->
+                <div class="col-md-6">
+                    <div class="candidate-box">
+                        <img src="images/rep1.jpg" alt="Representative 1" class="candidate-img">
+                        <h5>Representative 1</h5>
+                        <select name="rep" class="form-control" required>
+                            <option value="Alice Green">Alice Green</option>
+                            <option value="David Lee">David Lee</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Representative 2 -->
+                <div class="col-md-6">
+                    <div class="candidate-box">
+                        <img src="images/rep2.jpg" alt="Representative 2" class="candidate-img">
+                        <h5>Representative 2</h5>
+                        <select name="rep_1" class="form-control" required>
+                            <option value="Emily White">Emily White</option>
+                            <option value="Michael Johnson">Michael Johnson</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-md-6 text-left">
+                    <button type="button" class="btn btn-secondary btn-vote">Vote Later</button>
+                </div>
+                <div class="col-md-6 text-right">
+                    <button type="submit" name="submit" class="btn btn-success btn-vote">Submit Vote</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

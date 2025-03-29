@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SVS</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+
+    <style>
+    body{
+      margin:0px;
+      padding:0px;
+    }
+      .headerFont{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 24px;
+      }
+
+      .subFont{
+        font-family: 'Raleway', sans-serif;
+        font-size: 14px;
+      }
+      
+      .specialHead{
+        font-family: 'Oswald', sans-serif;
+      }
+
+      .normalFont{
+        font-family: 'Roboto Condensed', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+	<div class="container">
+  	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand headerFont text-lg">SIS Voting System in College Department</a>
+        </div>
+        <div class="collapse navbar-collapse" id="example-nav-collapse">
+          <span class="normalFont"><a href="admin.html" class="btn btn-success navbar-right navbar-btn" style="border-radius:0%">Admin Panel</a></span>
+        </div>
+      </div>
+    </nav>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="jumbotron text-center text-block" style="padding-top:170px;">
+            <img src="images/vote.png" width="220px" alt="Icon">
+            <h1 class="specialHead">Simple Voting System</h1>
+            <p class="normalFont">Safe . Reliable . Secure . Fast </p>
+            
+            <a href="vault.html" class="btn btn-danger btn-lg specialHead" style="border-radius:60px"> 
+              <span class="glyphicon glyphicon-folder-close"></span> Cast Your Votes Now
+            </a>
+            <br><br>
+            <a href="index.html" class="btn btn-warning btn-lg specialHead" style="border-radius:60px"> 
+              <span class="glyphicon glyphicon-time"></span> Vote Later
+            </a>
+            <a href="logout.php" class="btn btn-dark btn-lg specialHead" style="border-radius:60px"> 
+              <span class="glyphicon glyphicon-log-out"></span> Logout
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
